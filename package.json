@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start-pwa": "ng build --prod && http-server -p 8080 -c-1 dist/angular-pwa",
-    "predeploy": "ng build --prod --base-href=/angular-pwa/",
+    "start-pwa": "ng build --prod && http-server -p 8081 -c-1 dist/angular-pwa",
+    "predeploy": "ng build --prod --base-href= 'https://architect182.github.io/angualr-pwa/'",
     "deploy": "npx gh-pages -d dist/angular-pwa",
     "start": "ng serve",
     "build": "ng build",
@@ -23,6 +23,7 @@
     "@angular/platform-browser-dynamic": "~11.2.5",
     "@angular/router": "~11.2.5",
     "@angular/service-worker": "~11.2.5",
+    "http-server": "^13.0.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
